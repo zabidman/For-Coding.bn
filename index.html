@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WearIt</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+
+      <!-- navbar -->
+      <div class=" uk-responsive-height"uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
+      <div class="uk-navbar-left uk-hidden@s">
+           <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#offcanvas-usage"  uk-toggle="target: #offcanvas-usage"></a>
+           <div id="offcanvas-usage" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+           <ul class="uk-nav uk-nav-default">
+               <li class="uk-active"><a href="index.html">HOME</a></li>
+               <li class="uk-nav-header">
+                  <a href="women.html">Women</a>
+                   <ul class="uk-nav-sub">
+                       <li><a href="womentops.html">TOPS</a></li>
+                       <li><a href="womenpants.html">PANTS</a></li>
+                       <li><a href="womenshoes.html">SHOES</a></li>
+                   </ul>
+               </li>
+               <li class="uk-nav-header">
+                  <a href="men.html">men</a>
+                   <ul class="uk-nav-sub">
+                     <li><a href="mentops.html">TOPS</a></li>
+                     <li><a href="menpants.html">PANTS</a></li>
+                     <li><a href="menshoes.html">SHOES</a></li>
+                   </ul>
+               </li>
+               <li class="uk-nav-header">
+                  <a href="kids.html">kid</a>
+                   <ul class="uk-nav-sub">
+                     <li><a href="kidstops.html">TOPS</a></li>
+                     <li><a href="kidspants.html">PANTS</a></li>
+                     <li><a href="kidsshoes.html">SHOES</a></li>
+                   </ul>
+               </li>
+           </ul>
+
+        </div>
+          </div>
+      </div>
+        <div class="uk-navbar-left uk-visible@s">
+
+            <ul class="uk-navbar-nav">
+                <li><a href="women.html">Women</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="kids.html">Kids</a></li>
+            </ul>
+
+        </div>
+        <div class="uk-position-center">
+        <a class="uk-navbar-item uk-logo uk-visible@s" href="index.html"><img class="uk-responsive-width" src="logo.png" style="width:200px" alt=""></a>
+        </div>
+
+        <div class="uk-margin uk-position-right  uk-visible@s">
+            <form class="uk-search uk-search-default">
+                <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                <input class="uk-search-input uk-responsive-width" type="search" placeholder="Search...">
+            </form>
+        </div>
+        <div class="nav-overlay uk-navbar-right uk-hidden@s">
+
+            <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+
+        </div>
+
+        <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+
+            <div class="uk-navbar-item uk-width-expand">
+                <form class="uk-search uk-search-navbar uk-width-1-1">
+                    <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                </form>
+            </div>
+
+            <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+
+        </div>
+    </nav>
+    </div>
+<!-- alert-->
+<div>
+
+<div class="uk-alert-warning" uk-alert uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+  <div>
+    <p>HURRY UP! 30% Discount will expired soon, grab all you can before countdown is finish.</p>
+  </div>
+<div class="uk-grid-small uk-child-width-auto " uk-grid uk-countdown="date: 2020-08-12T14:30:00+00:00">
+
+    <div>
+        <div class="uk-countdown-number uk-countdown-days"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-hours"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-minutes"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-seconds"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+    </div>
+
+</div>
+</div>
+</div>
+
+<!-- carousel -->
+<div class="uk-container uk-container-large">
+  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+
+      <ul class="uk-slider-items uk-grid">
+          <li class="uk-width-3-4">
+              <div class="uk-panel">
+                  <img src="slider/photo.jpg" alt="">
+                  <div class="uk-position-center uk-panel"><img class="uk-align-center uk-width-5-6"src="logo.png" alt=""></div>
+              </div>
+          </li>
+          <li class="uk-width-3-4">
+              <div class="uk-panel">
+                  <img src="slider/photo1.jpg" alt="">
+                  <div class="uk-position-center uk-panel"><h1 class="uk-align-center">EXPRESS</h1><h1 class="uk-align-center">YOURSELF</h1></div>
+              </div>
+          </li>
+          <li class="uk-width-3-4">
+              <div class="uk-panel">
+                  <img src="slider/photo2.jpg" alt="">
+                  <div class="uk-position-center uk-panel"><h1>Free<h1>Shipping</h1></div>
+              </div>
+          </li>
+          <li class="uk-width-3-4">
+              <div class="uk-panel">
+                  <img src="slider/photo3.jpg" alt="">
+                  <div class="uk-position-center uk-panel"><h1>New Arrival</h1></div>
+              </div>
+          </li>
+          <li class="uk-width-3-4">
+              <div class="uk-panel">
+                  <img src="slider/photo4.jpg" alt="">
+                  <div class="uk-position-center uk-panel"><h1>30% Discount</h1></div>
+              </div>
+          </li>
+      </ul>
+
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+  </div>
+</div>
+
+<!-- gap -->
+<div>
+<p>&nbsp</p>
+</div>
+
+<!--card-->
+<div class="uk-container uk-container-xsmall">
+
+<div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+    <div>
+        <div class="uk-card uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Quality</h3>
+            <p>We ensure you with our product quality.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Price</h3>
+            <p>Customer can buy our product with an affordable price.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Local Made</h3>
+            <p>Our product was 100% local made in Brunei.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Design</h3>
+            <p>Our product was design by our local fashion designers.</p>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- gap -->
+<div>
+<p>&nbsp</p>
+</div>
+
+<div class="uk-section-default">
+  <div class="uk-section uk-light uk-background-cover" style="background-image: url(dark.jpg)">
+      <div class="uk-container">
+
+          <div class="uk-grid-match uk-child-width-1-5@m" uk-grid>
+              <div>
+                <p></p>
+              </div>
+              <div>
+                  <h4>About Us</h4>
+                  <p>WearIt is a 100% local brand that offer our customer with a latest fahsion design that everyone can wear confidently.</p>
+              </div>
+              <div>
+                  <h4>Our Showcase</h4>
+                  <p>Unit C2,
+                  <br/>Plaza Seria 1st Floor,
+                  <br/>Jalan Sultan Omar Ali,
+                  <br/>Seria,
+                  Brunei Darussalam KB3933</p>
+              </div>
+              <div>
+                  <h4>Customer Service</h4>
+                  <p>Contact our customer service if you have any inquiry during office hour;
+                  <br/><br/>+673 333 5020
+              </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

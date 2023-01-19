@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WearIt</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+
+  <!-- navbar -->
+  <div class=" uk-responsive-height"uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+<nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
+  <div class="uk-navbar-left uk-hidden@s">
+       <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#offcanvas-usage"  uk-toggle="target: #offcanvas-usage"></a>
+       <div id="offcanvas-usage" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <ul class="uk-nav uk-nav-default">
+            <li class="uk-active"><a href="index.html">HOME</a></li>
+            <li class="uk-nav-header">
+               <a href="women.html">Women</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="womentops.html">TOPS</a></li>
+                    <li><a href="womenpants.html">PANTS</a></li>
+                    <li><a href="womenshoes.html">SHOES</a></li>
+                </ul>
+            </li>
+            <li class="uk-nav-header">
+               <a href="men.html">men</a>
+                <ul class="uk-nav-sub">
+                  <li><a href="mentops.html">TOPS</a></li>
+                  <li><a href="menpants.html">PANTS</a></li>
+                  <li><a href="menshoes.html">SHOES</a></li>
+                </ul>
+            </li>
+            <li class="uk-nav-header">
+               <a href="kids.html">kid</a>
+                <ul class="uk-nav-sub">
+                  <li><a href="kidstops.html">TOPS</a></li>
+                  <li><a href="kidspants.html">PANTS</a></li>
+                  <li><a href="kidsshoes.html">SHOES</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+      </div>
+  </div>
+    <div class="uk-navbar-left uk-visible@s">
+
+        <ul class="uk-navbar-nav">
+            <li><a href="women.html">Women</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="kids.html">Kids</a></li>
+        </ul>
+
+    </div>
+    <div class="uk-position-center">
+    <a class="uk-navbar-item uk-logo uk-visible@s" href="index.html"><img class="uk-responsive-width" src="logo.png" style="width:200px" alt=""></a>
+    </div>
+
+    <div class="uk-margin uk-position-right  uk-visible@s">
+        <form class="uk-search uk-search-default">
+            <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+            <input class="uk-search-input uk-responsive-width" type="search" placeholder="Search...">
+        </form>
+    </div>
+    <div class="nav-overlay uk-navbar-right uk-hidden@s">
+
+        <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+
+    </div>
+
+    <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+
+        <div class="uk-navbar-item uk-width-expand">
+            <form class="uk-search uk-search-navbar uk-width-1-1">
+                <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+            </form>
+        </div>
+
+        <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+
+    </div>
+</nav>
+</div>
+
+<!-- viewed item -->
+<div class="uk-container">
+  <div class="uk-child-width-expand@s uk-text-left" uk-grid>
+
+        <div class="uk-align-center" uk-lightbox="animation:slide">
+          <img class="uk-align-center" src="kid/s11.jpg" width="400px"alt="">
+          <a class="uk-inline" href="kid/s1.jpg" data-caption="">
+          <a class="uk-button uk-button-default uk-align-center" href="kid/s1.jpg">View Item</a>
+      </div>
+      <div>
+        <ul uk-accordion>
+            <li class="uk-open">
+                <a class="uk-accordion-title" href="#">Description</a>
+                <div class="uk-accordion-content">
+                    <p>Gender: Female
+                  <br/>Age-Group: Kids
+                  <br/>Shirt type: Informal
+                  <br/>Material: 100% Organic Cotton
+                  <br/>Color: White</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">Shipping</a>
+                <div class="uk-accordion-content">
+                    <p>Free Shipping to Malaysia, Singapore, and Indonesia.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">Return Policy</a>
+                <div class="uk-accordion-content">
+                    <p>For any damage product, customer can inform our customer service within 7 days after purchasing the products.</p>
+                </div>
+            </li>
+        </ul>
+        <form action="/action_page.php">
+  <label for="cars">Size:</label>
+  <select id="cars" name="cars">
+    <option>XS</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+    <option>XXL</option>
+  </select>
+</form>
+<button class="uk-button uk-button-secondary uk-align-center">Buy</button>
+  </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- gap -->
+<div>
+<p>&nbsp</p>
+</div>
+
+<!--footer-->
+  <div class="uk-section-default">
+    <div class="uk-section uk-light uk-background-cover" style="background-image: url(dark.jpg)">
+        <div class="uk-container">
+
+            <div class="uk-grid-match uk-child-width-1-5@m" uk-grid>
+                <div>
+                  <p></p>
+                </div>
+                <div>
+                    <h4>About Us</h4>
+                    <p>WearIt is a 100% local brand that offer our customer with a latest fahsion design that everyone can wear confidently.</p>
+                </div>
+                <div>
+                    <h4>Our Showcase</h4>
+                    <p>Unit C2,
+                    <br/>Plaza Seria 1st Floor,
+                    <br/>Jalan Sultan Omar Ali,
+                    <br/>Seria,
+                    Brunei Darussalam KB3933</p>
+                </div>
+                <div>
+                    <h4>Customer Service</h4>
+                    <p>Contact our customer service if you have any inquiry during office hour;
+                    <br/><br/>+673 333 5020
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>
